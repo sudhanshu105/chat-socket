@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    border-top: 2px solid #D3D3D3;
+    align-items: center;
+  }
+  
+  .input {
+    border: none;
+    border-radius: 0;
+    padding: 5%;
+    width: 90%;
+    font-size: 1.2em;
+  }
+  
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+  
+  .sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+    &:hover{
+      box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+    }
+    img{
+      position: absolute;
+      // width: 35px;
+      // height: 35px;
+
+      top: 50%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+      
+      /* Optionally, limit the size of the image to fit within the button */
+      max-width: 80%;
+      max-height: 80%;
+    }
+  }
